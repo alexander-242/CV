@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #070a1c;
+}
+
+/*Shoe Ecommerce Site */
+
+
+
+.shoebody
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #131313;
+}
+
+.shoecontainer
+{
+    position: relative;
+}
+
+.shoecontainer .shoecard
+{
+    position: relative;
+    width: 320px;
+    height: 450px;
+    margin-left: 10px;
+    background: #232323;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+.shoecontainer .shoecard:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f8ede3;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+.shoecontainer .shoecard:hover:before
+{
+    clip-path: circle(300px at 70% -20%);
+}
+
+.shoecontainer .shoecard:after
+{
+    content: 'Nike';
+    position: absolute;
+    top: 50%;
+    left: -20%;
+    font-size: 11em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255,255, 255, 0.04);
+   
+}
+
+.shoecontainer .shoecard .imgBX
+{
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    width: 100%;
+    height: 220px;
+}
+
+.shoecontainer .shoecard:hover .imgBX
+{
+    top: 10%;
+    transform: translateY(0%);
+    transition: 1.5s;
+}
+
+.shoecontainer .shoecard .imgBX img
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-25deg);
+    
+    width: 270px;
+    
+}
+
+.shoecontainer .shoecard .contentBx
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+}
+
+.shoecontainer .shoecard:hover .contentBx
+{
+    height: 210px;
+}
+
+.shoecontainer .shoecard .contentBx h2
+{
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+
+.shoecontainer .shoecard .contentBx .size,
+.shoecontainer .shoecard .contentBx .color
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.shoecontainer .shoecard:hover .contentBx .size
+{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+
+.shoecontainer .shoecard:hover .contentBx .color
+{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.6s;
+}
+
+.shoecontainer .shoecard .contentBx .size h3
+.shoecontainer .shoecard .contentBx .color h3
+
+{
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+
+}
+
+.shoecontainer .shoecard .contentBx .size span
+{
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    display: inline-block;
+    color: #111;
+    background:#fff;
+    margin: 0 5px;
+    transition: 0.5s;
+    color: #111;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.shoecontainer .shoecard .contentBx .size span:hover
+{
+    background: #86e5ff;
+
+}
+
+.shoecontainer .shoecard .contentBx .color span
+{
+    width: 20px;
+    height: 20px;
+    background: #58c0f8;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.shoecontainer .shoecard .contentBx .color span:nth-child(2)
+{
+    background: #f5edce;
+}
+
+.shoecontainer .shoecard .contentBx .color span:nth-child(3)
+{
+    background: #1c315e;
+}
+
+.shoecontainer .shoecard .contentBx .color span:nth-child(4)
+{
+    background: #86e5ff;
+}
+
+
+.shoecontainer .shoecard .contentBx a
+{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+
+}
+
+
+.shoecontainer .shoecard:hover .contentBx a
+{
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.75s;
+}
+
+
+/*Index Landing Page */
+
+.bodyContact
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: auto;
+    min-height: 100vh;
+    background: #fff;
+
+}
+.box
+{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.box::before
+{
+
+    content: '';
+    position: absolute;
+    inset: -10px 140px;
+    background: linear-gradient(315deg, #0081c9, #ffc93c);
+    transition: 0.7s;
+    animation: animate 4s linear infinite;
+}
+
+.box:hover::before
+{
+    inset: -20px 0px;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    0%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+.box::after
+{
+    content: '';
+    position: absolute;
+    inset: 6px;
+    background: #162052;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.content
+{
+position: absolute;
+inset: 40px;
+border: 6px solid #070a1c;
+z-index: 3;
+border-radius: 50%;
+overflow: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.content img
+{
+    position: absolute;
+    top: 10;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 3;
+}
+
+.box:hover .content img
+{
+    opacity: 0;
+
+}
+
+.content h2 
+{
+    position: relative;
+    font-size: 1.5em;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.content h2 span
+{
+    font-weight: 300;
+    font-size: 0.75em;
+
+}
+
+.content a
+{
+    position: relative;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #fff;
+    color: #070a1c;
+    border-radius: 75px;
+    font-weight: 500;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.content a:hover
+{
+    letter-spacing: 0.2em;
+
+}
+
+
+/* NAV Page */
+
+
+.socialMedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: 1s;
+    background-color: #fff;
+  }
+  
+.sci 
+  {
+  position: relative;
+  display: flex;
+  
+  }
+  
+.sci li {
+    list-style: none;
+  }
+  
+ .sci li::before
+  {
+    content: attr(data-text);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,calc(-50% + 120px));
+    font-size: 14vw;
+    pointer-events: none;
+    font-weight: 700;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  
+ .sci li:hover::before
+  {
+    opacity: 0.1;
+    transform: translate(-50% ,calc(-50% + 150px));
+  }
+    
+.sci li a
+  {
+    position: relative;
+    display: inline-block;
+    width: 220px;
+    height: 120px;
+    background:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 4em;
+    transform-style: preserve-3d;
+    transform: perspective (20px);
+    box-shadow: 0 25px 35px rgba(0,0,0,0.1);
+    transition: background 0.25s;
+  
+  }
+  
+.js-tilt-glare
+  {
+    border-radius: 10px;
+  }
+  
+ .sci li a:hover.whatsapp
+  {
+    background: #144272;
+  }
+ .sci li a:hover.linkedin
+  {
+    background: #1877f2;
+  }
+  .sci li a:hover.instagram
+  {
+    background: #678983;
+  }
+  .sci li a:hover.watch
+  {
+    background: #850000;
+  }
+  .sci li a .fa
+  {
+    transition: 1.25s;
+    pointer-events: none;
+  }
+  .sci li a:hover .fa
+  {
+    color: #162052;
+    transform: scale(1.75) translateZ(50px);
+  }

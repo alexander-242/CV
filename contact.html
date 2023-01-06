@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="utf-8">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="bodyContact">
+<div>
+<section class="socialMedia">
+    <ul class="sci">
+<li data-text="Home" data-color="#144272">
+<a href="index.html" class="whatsapp"><i class="fa-solid fa-house"
+  aria-hidden="true"></i></a>
+</li>
+<li data-text="LinkedIn" data-color="#1877f2">
+<a href="https://www.linkedin.com/in/christopher-thompson-52787b113/" class="linkedin"><i class="fa-brands fa-linkedin"
+  aria-hidden="true"></i></a>
+</li>
+<li data-text="Shop" data-color="#679883">
+<a href="shoes.html" class="instagram"><i class="fa-solid fa-shop"
+  aria-hidden="true"></i></a>
+</li>
+<li data-text="Watch" data-color="#850000">
+    <a href="junkanoo.html" class="watch"><i class="fa-solid fa-tv"
+      aria-hidden="true"></i></a>
+    </li>
+    </ul>
+</div>
+  </section>
+
+
+
+
+
+
+  <script src="vanilla-tilt.min.js"> </script>
+  <script>
+
+  VanillaTilt.init(document.querySelectorAll(".sci li a"), {
+
+      max: 30,
+      speed: 400,
+  glare: true,
+  "max-glare": 1,
+    });
+
+    let list = document.querySelectorAll('.sci li');
+    let bg = document.querySelector('.socialMedia');
+    list.forEach( eLements => {
+      eLements.addEventListener('mouseenter', function
+      (event){
+        let color = event.target.getAttribute
+        ('data-color');
+        bg.style.backgroundColor = color;
+
+      })
+      eLements.addEventListener('mouseleave', function
+      (event){
+        
+        bg.style.backgroundColor = '#fff';
+
+      })
+    })
+
+
+  </script>
+  </body>
+</html>
